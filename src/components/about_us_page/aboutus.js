@@ -17,7 +17,7 @@ export default function ButtonMUI() {
     <>
       <DrawerAppBar />
       <Stack p={{ xs: "15px", sm: "25px", md: "40px", lg: "60px " }}>
-        <h2 className="template-header-title">Resume-Generator</h2>
+        <h2 className="template-header-title ">Resume-Generator</h2>
         <Stack
           className="midContainer"
           direction={{

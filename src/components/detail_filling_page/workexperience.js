@@ -3,20 +3,29 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+
 import Grid from '@mui/material/Grid';
 import { TextField } from '@mui/material';
 import {Typography} from '@mui/material';
 import { useFieldArray, useFormContext } from 'react-hook-form';
+
+
 function Addexperience(props){
 //adding work experience by mapping
-  const {register,errors}=props;
+  const {register,errors, index }=props;
+ 
 const {append,fields,remove}=useFieldArray({name:"experiences"})
+
+
 return(<>
-{fields.map((item,index)=>{return(<>
+{fields.map((item,i)=>{return(<>
+
   <Typography variant='h6'  m={3}>
          Experience {index+2}
         </Typography>
 <Grid key={item.id} container spacing={2}>
+ 
+  
         <Grid item xs={6}>
           <TextField id="filled-basic" label="Job Title" {...register(`experiences[${index}].Job_Title`,{ required: true })} defaultValue={item.Job_Title} variant="outlined" fullWidth/>
           {errors.Job_Title && <span>*This Job Title field is required*</span>}
@@ -25,6 +34,7 @@ return(<>
           <TextField id="filled-basic" label="Organization" {...register(`experiences[${index}].Organization`,{ required: true })} defaultValue={item.Organization}  variant="outlined"fullWidth />
           {errors.Organization && <span>*This Organization field is required*</span>}
         </Grid>
+
         <Grid item xs={6}>
         <Typography variant="body1" color="GrayText">start Date</Typography>
           <TextField type='date' id="filled-basic"  {...register(`experiences[${index}].Start_Date`,{ required: true })} defaultValue={item.Start_Date}  variant="outlined" fullWidth/>
@@ -36,21 +46,46 @@ return(<>
           {errors.End_Date && <span>*This end date field is required*</span>}
         </Grid>
         <Grid item xs={12}>
+        <TextField
+          label="Description"
+          multiline
+          rows={5}
+          rowsMax={10}
+          fullWidth
+          {...register(`experiences[${index}].Description`)}
+          variant="outlined"
+          placeholder="Describe your responsibilities and achievements in this role."
+        />
+      </Grid>
+        <Grid item xs={12}>
+       
         <Stack direction="row" spacing={2} justifyContent="right">
+      
       <Button variant='contained' color='error' onClick={()=>{remove(index)}}>Remove</Button>
     </Stack>
         </Grid>
+        
+   
       </Grid>
+      
+      
       </>)})}
+
       <Grid item xs={12}>
-      <Stack direction="row" spacing={2} justifyContent="center">
+       
+        <Stack direction="row" spacing={2} justifyContent="center">
       
       <Button onClick={()=>{append({Job_Title:"",Organization:"",Start_Date :"",End_Date:""})}}>Add New</Button>
     </Stack>
         </Grid>
-</> 
+</>
+  
 )
+
+
 }
+
+
  function Work_info(props) {
   const { register,formState: { errors }} = useFormContext()
 
@@ -63,6 +98,7 @@ return(<>
          Experience 1
         </Typography>
       <Grid container spacing={2}>
+        
         <Grid item xs={6}>
           <TextField id="filled-basic" label="Job Title" {...register(`Job_Title`,{ required: true })} variant="outlined" fullWidth/>
           {errors.Job_Title && <span >*This Job Title is required*</span>}
@@ -82,16 +118,14 @@ return(<>
           <TextField  type='date'  id="outlined-basic"  {...register(`End_Date`,{ required: true })} variant="outlined" fullWidth />
           {errors.End_Date && <span>*This end date field is required*</span>}
         </Grid>
-      </Grid>
+        <Grid item xs={12}>
+          <Addexperience register={register} errors={errors} index={0} />  {/* Pass index as prop */}
+        </Grid>
+
+  </Grid>
       <Grid item xs={12}>   <Addexperience register={register} errors={errors} /></Grid>
 
     </Box>
   );
 }
 export default  Work_info;
-
-
-
-
-
-
