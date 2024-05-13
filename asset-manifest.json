@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Group-3-Resume-Generator-App/static/css/main.3aa6ea88.css",
-    "main.js": "/Group-3-Resume-Generator-App/static/js/main.10a4829c.js",
+    "main.js": "/Group-3-Resume-Generator-App/static/js/main.9a0e9286.js",
     "static/js/213.9ecf888e.chunk.js": "/Group-3-Resume-Generator-App/static/js/213.9ecf888e.chunk.js",
     "static/js/455.bad777f4.chunk.js": "/Group-3-Resume-Generator-App/static/js/455.bad777f4.chunk.js",
     "static/js/453.10b9a410.chunk.js": "/Group-3-Resume-Generator-App/static/js/453.10b9a410.chunk.js",
@@ -12,13 +12,13 @@
     "static/media/aboutCV.jpg": "/Group-3-Resume-Generator-App/static/media/aboutCV.dd655c959eb91a827e82.jpg",
     "index.html": "/Group-3-Resume-Generator-App/index.html",
     "main.3aa6ea88.css.map": "/Group-3-Resume-Generator-App/static/css/main.3aa6ea88.css.map",
-    "main.10a4829c.js.map": "/Group-3-Resume-Generator-App/static/js/main.10a4829c.js.map",
+    "main.9a0e9286.js.map": "/Group-3-Resume-Generator-App/static/js/main.9a0e9286.js.map",
     "213.9ecf888e.chunk.js.map": "/Group-3-Resume-Generator-App/static/js/213.9ecf888e.chunk.js.map",
     "455.bad777f4.chunk.js.map": "/Group-3-Resume-Generator-App/static/js/455.bad777f4.chunk.js.map",
     "453.10b9a410.chunk.js.map": "/Group-3-Resume-Generator-App/static/js/453.10b9a410.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3aa6ea88.css",
-    "static/js/main.10a4829c.js"
+    "static/js/main.9a0e9286.js"
   ]
 }
