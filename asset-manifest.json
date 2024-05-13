@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/Group-3-Resume-Generator-App/static/css/main.53af5d62.css",
-    "main.js": "/Group-3-Resume-Generator-App/static/js/main.f715ba37.js",
-    "static/js/453.68d2f560.chunk.js": "/Group-3-Resume-Generator-App/static/js/453.68d2f560.chunk.js",
+    "main.css": "/Group-3-Resume-Generator-App/static/css/main.3aa6ea88.css",
+    "main.js": "/Group-3-Resume-Generator-App/static/js/main.10a4829c.js",
+    "static/js/213.9ecf888e.chunk.js": "/Group-3-Resume-Generator-App/static/js/213.9ecf888e.chunk.js",
+    "static/js/455.bad777f4.chunk.js": "/Group-3-Resume-Generator-App/static/js/455.bad777f4.chunk.js",
+    "static/js/453.10b9a410.chunk.js": "/Group-3-Resume-Generator-App/static/js/453.10b9a410.chunk.js",
     "static/media/T1.png": "/Group-3-Resume-Generator-App/static/media/T1.30a8e7ae19e4ee9d3c08.png",
     "static/media/T2.png": "/Group-3-Resume-Generator-App/static/media/T2.5dcd8119f31af98e4eeb.png",
     "static/media/T4.png": "/Group-3-Resume-Generator-App/static/media/T4.950da4e4394dcac273e6.png",
     "static/media/T3.png": "/Group-3-Resume-Generator-App/static/media/T3.ac2b97c160ff3c71211f.png",
     "static/media/aboutCV.jpg": "/Group-3-Resume-Generator-App/static/media/aboutCV.dd655c959eb91a827e82.jpg",
     "index.html": "/Group-3-Resume-Generator-App/index.html",
-    "main.53af5d62.css.map": "/Group-3-Resume-Generator-App/static/css/main.53af5d62.css.map",
-    "main.f715ba37.js.map": "/Group-3-Resume-Generator-App/static/js/main.f715ba37.js.map",
-    "453.68d2f560.chunk.js.map": "/Group-3-Resume-Generator-App/static/js/453.68d2f560.chunk.js.map"
+    "main.3aa6ea88.css.map": "/Group-3-Resume-Generator-App/static/css/main.3aa6ea88.css.map",
+    "main.10a4829c.js.map": "/Group-3-Resume-Generator-App/static/js/main.10a4829c.js.map",
+    "213.9ecf888e.chunk.js.map": "/Group-3-Resume-Generator-App/static/js/213.9ecf888e.chunk.js.map",
+    "455.bad777f4.chunk.js.map": "/Group-3-Resume-Generator-App/static/js/455.bad777f4.chunk.js.map",
+    "453.10b9a410.chunk.js.map": "/Group-3-Resume-Generator-App/static/js/453.10b9a410.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53af5d62.css",
-    "static/js/main.f715ba37.js"
+    "static/css/main.3aa6ea88.css",
+    "static/js/main.10a4829c.js"
   ]
 }
